@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  
+}
+
+
+.topList {
+    list-style-type: none;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    text-align: end;
+    
+  }
+  
+  .navList {
+    float: left;
+    justify-content: space-around;
+    font-size: 35px;
+   
+  }
+  
+  .navList a {
+    display: block;
+    color: black;
+    text-align: bottom;
+    padding: 50px 16px;
+    text-decoration: none;
+    height: 120px;
+    
+  }
+  
+  
+  .navList:hover  {
+    background-color: rgba(28, 231, 120, 0.836);
+  }
+
+  .main{
+    margin: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main h1{
+    font-size: 50px;
+    font-weight: bolder;
+  }
+
+  .chest{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img{
+    height: 800px;
+    
+  }
+
+  .row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+  }
+
+  .rowChild{
+    height: 450px;
+    width: 346px;
+   
+    border: 1px black;
+    
+  }
+
+  .rowchildOne{
+    height: 10%;
+    background-color: greenyellow;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .rowchildTwo{
+    height: 51%;
+    background-image: url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80');
+    
+    background-size: contain;
+  }
+
+  .rowchildThree{
+    
+    height: 30%;
+    padding: 10px;
+    background-color: gold;
+  }
+
+
+  .descriptionRow{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .descriptionChild{
+    height: 400px;
+    width: 346px;
+   
+    
+  }
+
+  .list{
+    line-height: 50px;
+    font-size: 20px;
+    list-style: none;
+    
+  }
+
+
+  .list:before {
+    content: ">"; /* Insert content that looks like bullets */
+  
+        padding-right: 8px;
+    color: blue; /* Or a color you prefer */
+  } 
+
+  .descriptionHead{
+    text-align: center;
+   padding: 10px;
+  }
+
+  .secondBox{
+    color: green;
+
+    line-height: 50px;
+  }
+
+  .secondBoxPara{
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .finalRow{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin-bottom: 50px;
+  }
+
+  .compOne{
+    
+    text-align: center;
+    display: flex;
+    width: 41.5%;
+    height: 130px;
+    
+  }
+
+  .number{
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 100% ;
+    background-color: greenyellow;
+    
+    
+  }
+
+
+  .finalDesc{
+    
+    justify-content: center;
+    width: 75%;
+    height: inherit ;
+    background-color: grey;
+  }
+
+  .FinalItem{
+    font-size: 60px;
+    
+    
+    margin: auto;
+    
+  }
+
+  .finalDescOne{
+    padding-top: 5px;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+    
+  }
+
+
+  .finalDescTwo{
+    font-size: 15px;
+  }
+
+
+  @media only screen and (max-width: 1000px) {
+      
+      
+
+    
+
+    nav{
+      height: inherit;
+      
+    }
+
+    .topList{
+      display: flex;
+      flex-direction: column;
+      overflow: visible;
+    }
+
+    .navList a{
+      height: 10px;
+      
+    } 
+
+    img{
+      height: 300px;
+    }
+   
+    .row{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .descriptionRow{
+      display: flex;
+      flex-direction: column;
+    }
+ 
+    .finalRow{
+      flex-direction: column;
+    }
+     
+    .compOne{
+      width: 80%;
+     
+      text-overflow: clip;
+    }
+
+    .finalDescOne{
+      font-size: 10px;
+    }
+
+    .finalDescTwo{
+      font-size: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 425px){
+   
+  
+
+  nav{
+    height: inherit;
+    
+  }
+
+  .topList{
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  .navList a{
+    height: 10px;
+    
+  } 
+
+  img{
+    height: 250px;
+  }
+ 
+  .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .descriptionRow{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .finalRow{
+    flex-direction: column;
+  }
+   
+  .compOne{
+    width: 70%;
+   
+    text-overflow: clip;
+  }
+
+  .finalDescOne{
+    font-size: 8px;
+  }
+
+  .finalDescTwo{
+    font-size: 8px;
+  }
+  }
